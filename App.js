@@ -5,8 +5,12 @@ import Botao from './SRC/components/button/button';
 
 export default function LoginScreen() {
   return (
-    <View style={styles.container}>
-        <View style={styles.body1}>
+/*
+ view principal 
+*/
+     <View style={styles.container}>
+
+        <View style={styles.body1}> 
            <ImageBackground>
            <Image style={styles.Image2}
             source={require('./assets/images/login.jpeg')}/>
@@ -23,11 +27,8 @@ export default function LoginScreen() {
         <Text>Esqueceu a senha? <Text style={styles.texto3} >Clique aqui!</Text></Text>
         </View>
         
-          <Text>Facimp Wyden</Text>
-        
-    </View>
-      
-    
+          <Text style={styles.texto4}>Facimp Wyden</Text>
+ </View>   
   
 )};
 const styles = StyleSheet.create({
@@ -73,8 +74,11 @@ const styles = StyleSheet.create({
   texto3:{
     color:'blue',
     fontWeight:'bold' 
+  },
+  texto4:{
+    color:'#808080',
+    fontWeight:'bold'
   }
-
 
 });
 
