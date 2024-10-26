@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, ImageBackground, Image, Dimensions } from 'react-native';
-import Tela_login from './SRC/components/login/index'
+import { View, StyleSheet, ImageBackground, Image, Dimensions,Text } from 'react-native';
+import Tela_login from './SRC/components/inputs/index'
 import Botao from './SRC/components/button/button';
 
 export default function LoginScreen() {
@@ -10,7 +10,8 @@ export default function LoginScreen() {
            <ImageBackground>
            <Image style={styles.Image2}
             source={require('./assets/images/login.jpeg')}/>
-            
+           <Text style={styles.titulo}>Bem-vindo(a) a barbearia</Text>
+           <Text style={styles.texto2}>Para continuar, insira suas credenciais!</Text>
            </ImageBackground> 
            
         </View>
@@ -19,7 +20,11 @@ export default function LoginScreen() {
         </View>
         <View style={styles.body3}>
         <Botao/>
+        <Text>Esqueceu a senha? <Text style={styles.texto3} >Clique aqui!</Text></Text>
         </View>
+        
+          <Text>Facimp Wyden</Text>
+        
     </View>
       
     
@@ -55,9 +60,21 @@ const styles = StyleSheet.create({
   Image2:{   
     height:150,
     width:150,
-    marginLeft:100
-    
+    marginLeft:100   
+  },
+  titulo:{
+    fontWeight:'bold',
+    fontSize:18,
+    textAlign:'center'    
+  },
+  texto2:{
+    textAlign:'center'
+  },
+  texto3:{
+    color:'blue',
+    fontWeight:'bold' 
   }
+
 
 });
 
