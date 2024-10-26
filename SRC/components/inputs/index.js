@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import {View, TextInput, StyleSheet} from 'react-native';
+import {View, TextInput, StyleSheet, Alert} from 'react-native';
 
-export default function()
-{
+export default function(){
     return(
         <View>
-            <TextInput placeholder='Email' style={style.backgroud}/>
-            <TextInput placeholder='Senha' style={style.backgroud}/>
+            <TextInput
+            placeholder='Email'
+            style={style.backgroud}
+            />
+            
+            <TextInput 
+            placeholder='Senha' 
+            style={style.backgroud}
+            />
         </View>
     ) 
 };

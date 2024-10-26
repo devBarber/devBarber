@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, StyleSheet, ImageBackground, Image, Dimensions,Text } from 'react-native';
 import Tela_login from './SRC/components/inputs/index'
 import Botao from './SRC/components/button/button';
 
 export default function LoginScreen() {
+  
   return (
 /*
  view principal 
@@ -23,7 +24,7 @@ export default function LoginScreen() {
           <Tela_login/>
         </View>
         <View style={styles.body3}>
-        <Botao/>
+        <Botao />
         <Text>Esqueceu a senha? <Text style={styles.texto3} >Clique aqui!</Text></Text>
         </View>
         
