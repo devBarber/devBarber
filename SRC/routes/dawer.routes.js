@@ -1,6 +1,9 @@
 import { createDrawerNavigator } from '@react-navigation/drawer';
+
 import Agenda from "../Views/Agenda/agenda";
 import CadastroBarbeiro from "../Views/CadastroBarbeiro/Cadastro";
+import CadastroBarbeiro from "../Views/TelaAgendamento/Agendamento";
+
 import TabRoutes from './tab.routes'
 
 
@@ -16,6 +19,10 @@ export default function DrawerRoutes(){
             <Drawer.Screen
                 name="Agenda"
                 component={Agenda}
+            />
+            <Drawer.Screen
+                name='Agendamento'
+                component={Agendamento}
             />
             <Drawer.Screen
             name='Cadastro Barbeiro'
